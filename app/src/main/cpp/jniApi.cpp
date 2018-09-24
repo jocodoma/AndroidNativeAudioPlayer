@@ -22,7 +22,7 @@ void Java_com_studio_jocodoma_nativeaudioplayer_MainActivity_playAudioPlayer(
 {
     LOG_DEBUG(" == playAudioPlayer == ");
 
-    const char* audioFilePath = env->GetStringUTFChars(filePath, 0);
+    const char *audioFilePath = env->GetStringUTFChars(filePath, 0);
     playAudioPlayer(audioFilePath, sampleRate, bufSize);
     env->ReleaseStringUTFChars(filePath, audioFilePath);
 }
